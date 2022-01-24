@@ -1,12 +1,155 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+<html lang="en">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>New Document</title>
+</head>
 
-  </body>
+<body>
+   <header class="page-header">
+
+      <nav class="navigation">
+         <form action="https://echo.htmlacademy.ru/courses" class="search-form" method="get">
+            <!-- <input type="search" placeholder="Поиск по сайту" value="Текст поиска" class="navigation-form-input"> -->
+            <label for="search-field"><span class="visually-hidden">Поиск по сайту</span></label>
+            <input class="search-field" type="search" name="search-value" id="search-field" placeholder="Текст поиска">
+            <button class="search-button">Найти</button>
+         </form>
+         <ul class="navigation-list">
+            <li class="navigation-item"><a href="" class="navigation-link">Войти</a></li>
+            <li class="navigation-item"><a href="" class="navigation-link">Сравнить</a></li>
+            <li class="navigation-item"><a href="" class="navigation-link">Корзина</a></li>
+         </ul>
+         <ul class="navigation-list">
+            <li class="navigation-item"><a href="" class="navigation-link">КАТАЛОГ ТОВАРОВ</a><button
+                  class="catalog-button"><span class="visually-hidden">+</span></button></li>
+            <li class="navigation-item"><a href="" class="link-button">ДОСТАВКА</a></li>
+            <li class="navigation-item"><a href="" class="link-button">ГАРАНТИЯ</a></li>
+            <li class="navigation-item"><a href="" class="link-button">КОНТАКТЫ</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main class="main-index">
+      <h1 class="visually-hidden">Магазин девайсов &laquo;Device&raquo;</h1>
+      <a href=""><img class="logo" src="" alt="Логотип магазина девайсов &laquo;Device&raquo;"></a>
+      <section class="slideshow">
+         <h2 class="visually-hidden">Слайдшоу с лучшими товарами</h2>
+         <ul class="slideshow-list">
+            <li class="slideshow-item">
+               <h3 class="visually-hidden">Квадракоптер</h3>
+               <img src="" alt="Квадракоптер с лазером">
+               <p><strong>Порхает как бабочка, жалит как пчела!</strong></p>
+               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+                  камеру.
+               </p>
+               <a class="link-button" href="">ПОДРОБНЕЕ</a>
+               <table class="slideshow-table">
+                  <tr class="slideshow-table-row">
+                     <th class="slideshow-table-head">800 м</th>
+                     <th class="slideshow-table-head">50 м</th>
+                  </tr>
+                  <tr>
+                     <td class="slideshow-table-data">Дальность полёта</td>
+                     <td class="slideshow-table-data">Радиус поражения</td>
+                  </tr>
+               </table>
+            </li>
+            <li class="slideshow-item">
+               <h3 class="visually-hidden">Слайд номер 2</h3>
+            </li>
+            <li class="slideshow-item">
+               <h3 class="visually-hidden">Слайд номер 3</h3>
+            </li>
+         </ul>
+      </section>
+      <section class="catalog">
+         <h2 class="visually-hidden">Каталог товаров</h2>
+         <ul class="catalog-list">
+            <li class="catalog-item"><a href="" class="catalog-link">Виртуальная реальность</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Моноподы для селфи</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Экшн-камеры</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Фитнес-браслеты</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Умные часы</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Квадракоптеры</a></li>
+         </ul>
+      </section>
+      <section class="delivery-info">
+         <!-- я сомневаюсь насчёт корректности слова "delivery" в названии классов, которых я присвоил элементам данной секции. Но я не могу придумать, как по другому это всё назвать :) -->
+         <h2 class="visually-hidden">Информация о доставке</h2>
+         <ul class="delivery-list">
+            <li class="delivery-item"><a href="" class="link-button">ДОСТАВКА</a>
+               <h3>Доставка</h3>
+               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                  заработаем, поднимая его на ваш этаж.</p>
+               <button class="delivery-button">
+                  ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКАЗ
+               </button>
+            </li>
+            <li class="delivery-item"><a href="" class="link-button">ГАРАНТИЯ</a>
+               <h3 class="visually-hidden">Гарантия</h3>
+            </li>
+            <li class="delivery-item"><a href="" class="link-button">КРЕДИТ</a>
+               <h3 class="visually-hidden">Кредит</h3>
+            </li>
+         </ul>
+
+      </section>
+      <section class="about">
+         <h2>О нас</h2>
+         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+         <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+         <ul class="about-list">
+            <li class="about-item">Меловые линии</li>
+            <li class="about-item">СДИК</li>
+            <li class="about-item">ТоксБерри</li>
+         </ul>
+         <a class="link-button" href="">ПОДРОБНЕЕ О НАС</a>
+      </section>
+      <section class="contacts">
+         <h2>Контакты</h2>
+         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
+         <b>Интернет-магазин «Девайс»</b>
+         <p>Санкт-Петербург, набережная реки Карповки, 5, литера П. +7 (812) 812-12-12</p>
+         <b>Время работы</b>
+         <p>пн—пт: с <time datetime="10:00">10:00</time> до <time datetime="22:00">22:00</time><br>сб—вс: с <time
+               datetime="10:00">10:00</time> до <time datetime="19:00">19:00</time></p>
+         <a class="link-button" href="">НАПИШИТЕ НАМ</a>
+      </section>
+      <section class="subscribe">
+         <h2 class="visually-hidden">Подписка на рассылку</h2>
+         <strong>Подпишитесь на рассылку</strong>
+         <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
+            спецпредложения и вот это вот всё.</p>
+         <form action="https://echo.htmlacademy.ru/courses" class="subscribe-form" method="post">
+            <input class="subscribe-field" type="text" name="email-value" id="subscribe-field" placeholder="Ваш e-mail">
+            <button type="submit" class="subscribe-button">ПОДПИСАТЬСЯ</button>
+            <label class="subscribe-label" for="subscribe-field">Это бесплатно</label>
+         </form>
+
+      </section>
+      <footer class="page-footer">
+         <a href=""><img class="page-footer-logo" src="" alt="Логотип магазина девайсов &laquo;Device&raquo;"></a>
+         <section class="page-footer-adress">
+            <h2 class="visually-hidden">Адрес магазина</h2>
+            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+         </section>
+         <section class="page-footer-info">
+            <h2 class="visually-hidden">Дополнительная инфомация</h2>
+            <ul class="page-footer-list">
+               <li class="page-footer-item"><a href="" class="page-footer-link">ДОСТАВКА</a></li>
+               <li class="page-footer-item"><a href="" class="page-footer-link">ГАРАНТИЯ</a></li>
+               <li class="page-footer-item"><a href="" class="page-footer-link">КОНТАКТЫ</a></li>
+            </ul>
+         </section>
+         <section class="page-footer-phone">
+            <h2 class="visually-hidden">Наш телефон</h2>
+            <p>Тел.: +7 (812) 812-12-12</p>
+         </section>
+      </footer>
+   </main>
+</body>
+
 </html>
