@@ -1,0 +1,154 @@
+@font-face {
+  src: url(../fonts/rubik/rubik-400.woff2);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  src: url(../fonts/rubik/rubik-700.woff2);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  src: url(../fonts/rubik/rubik-800.woff2);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+
+@font-face {
+  src: url(../fonts/raleway/raleway-800.woff2);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #FFFFFF;
+  color: #444444;
+}
+
+.page-header {
+  background-color: #FFE17F;
+  color: #000000;
+}
+
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-footer {
+  font-family: Raleway, sans-serif;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.slide-tagline {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.link-button {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.slideshow-table-head {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+}
+
+.catalog-link {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.section-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.delivery-button {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-item {
+  font-family: Rubik, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.contacts b {
+  font-family: Rubik, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.page-footer {
+  background-color: #444444;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.page-footer-link {
+  color: inherit;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-t-number {
+  text-decoration-line: underline;
+  font-size: 16px;
+  line-height: 20px;
+}
