@@ -14,31 +14,32 @@
       <nav class="navigation">
         <a href=""><img class="logo" src="images/header/logo.svg" width="145" height="36"
             alt="Логотип магазина девайсов &laquo;Device&raquo;"></a>
-        <div class="navigation-block">
-          <form action="https://echo.htmlacademy.ru/courses" class="search-form" method="get">
-            <label for="search-field"><span class="visually-hidden">Поиск по сайту</span></label>
-            <input class="search-field" type="search" name="search-value" id="search-field" placeholder="Текст поиска">
-            <button class="search-button">Найти</button>
-          </form>
-          <ul class="navigation-list">
-            <li class="navigation-item"><a href="" class="navigation-link"><img src="images/header/login.svg">Войти</a>
-            </li>
-            <li class="navigation-item"><a href="" class="navigation-link"><img
-                  src="images/header/compare.svg">Сравнить</a>
-            </li>
-            <li class="navigation-item"><a href="" class="navigation-link"><img src="images/header/card.svg">Корзина</a>
-            </li>
-          </ul>
-        </div>
-        <div class="navigation-block navigation-footer">
-          <ul class="navigation-list">
-            <li class="navigation-item"><a href="catalog.html" class="navigation-link">Каталог товаров</a><button
-                class="catalog-button"><span class="visually-hidden">+</span></button></li>
-            <li class="navigation-item"><a href="" class="navigation-link">Доставка</a></li>
-            <li class="navigation-item"><a href="" class="navigation-link">Гарантия</a></li>
-            <li class="navigation-item"><a href="" class="navigation-link">Контакты</a></li>
-          </ul>
-          </footer>
+
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <form action="https://echo.htmlacademy.ru/courses" class="search-form" method="get">
+              <label for="search-field"><span class="visually-hidden">Поиск по сайту</span></label>
+              <input class="search-field" type="search" name="search-value" id="search-field"
+                placeholder="Текст поиска">
+              <button class="search-button">Найти</button>
+            </form>
+          </li>
+          <li class="navigation-item"><a href="" class="navigation-link"><img src="images/header/login.svg">Войти</a>
+          </li>
+          <li class="navigation-item"><a href="" class="navigation-link"><img
+                src="images/header/compare.svg">Сравнить</a>
+          </li>
+          <li class="navigation-item"><a href="" class="navigation-link"><img src="images/header/card.svg">Корзина</a>
+          </li>
+        </ul>
+        <ul class="navigation-footer navigation-list ">
+          <li class="navigation-item"><a href="catalog.html" class="navigation-link">Каталог товаров</a><button
+              class="catalog-button"><span class="visually-hidden">+</span></button></li>
+          <li class="navigation-item"><a href="" class="navigation-link">Доставка</a></li>
+          <li class="navigation-item"><a href="" class="navigation-link">Гарантия</a></li>
+          <li class="navigation-item"><a href="" class="navigation-link">Контакты</a></li>
+        </ul>
+
       </nav>
     </header>
   </div>
@@ -52,8 +53,8 @@
           <li class="slideshow-item">
             <h3 class="visually-hidden">Квадракоптер</h3>
             <img src="images/slide-1.png" width="560" height="560" alt="Квадракоптер с лазером">
-            <p><strong class="slide-tagline">Порхает как бабочка, жалит как пчела!</strong></p>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+            <p class="slide-tagline">Порхает как бабочка, жалит как пчела!</p>
+            <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
               камеру.
             </p>
             <a class="link-button" href="">Подробнее</a>
@@ -124,10 +125,7 @@
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
               заработаем, поднимая его на ваш этаж.</p>
             <img src="images/delivery.svg" width="146" height="164">
-            <button class="delivery-button">
-              <img src="images/delivery-auto.svg">
-              Доставим редкий товар под заказ
-            </button>
+
           </li>
           <li class="delivery-item"><a href="" class="link-button">ГАРАНТИЯ</a>
             <h3 class="visually-hidden">Гарантия</h3>
@@ -139,12 +137,16 @@
       </div>
     </section>
     <div class="page-container">
+      <button class="delivery-button">
+        <img src="images/delivery-auto.svg">
+        Доставим редкий товар под заказ
+      </button>
       <div class="page-wrapper">
         <section class="about">
 
           <h2 class="section-title">О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="about-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="about-list">
             <li class="about-item">Меловые линии</li>
             <li class="about-item">СДИК</li>
@@ -156,11 +158,11 @@
         <section class="contacts">
 
           <h2 class="section-title">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
+          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
           <b>Интернет-магазин «Девайс»</b>
-          <p>Санкт-Петербург, набережная реки Карповки, 5, литера П. +7 (812) 812-12-12</p>
+          <p class="contacts-description">Санкт-Петербург, набережная реки Карповки, 5, литера П. +7 (812) 812-12-12</p>
           <b>Время работы</b>
-          <p>пн—пт: с <time datetime="10:00">10:00</time> до <time datetime="22:00">22:00</time><br>сб—вс: с <time
+          <p class="contacts-description">пн—пт: с <time datetime="10:00">10:00</time> до <time datetime="22:00">22:00</time><br>сб—вс: с <time
               datetime="10:00">10:00</time> до <time datetime="19:00">19:00</time></p>
           <a class="link-button" href="">НАПИШИТЕ НАМ</a>
 
@@ -175,7 +177,7 @@
           спецпредложения и вот это вот всё.</p>
         <form action="https://echo.htmlacademy.ru/courses" class="subscribe-form" method="post">
           <input class="subscribe-field" type="text" name="email-value" id="subscribe-field" placeholder="Ваш e-mail">
-          <button type="submit" class="link-button">ПОДПИСАТЬСЯ</button>
+          <button type="email" class="link-button">ПОДПИСАТЬСЯ</button>
           <label class="subscribe-label" for="subscribe-field">Это бесплатно</label>
         </form>
       </div>
@@ -190,7 +192,7 @@
         <section class="page-footer-adress">
           <h2 class="visually-hidden">Адрес магазина</h2>
           <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <div><img src="images/footer/weird-line.svg"></div>
+
         </section>
         <section class="page-footer-info">
           <h2 class="visually-hidden">Дополнительная инфомация</h2>
@@ -206,6 +208,7 @@
             </li>
             <li class="social-network-item"><a href=""><img src="images/footer/twitter.svg" alt="Наш твиттер"></a>
             </li>
+
           </ul>
         </section>
         <section class="page-footer-phone">
