@@ -121,17 +121,21 @@
         <h2 class="visually-hidden">Информация о доставке</h2>
         <ul class="delivery-list">
           <li class="delivery-item"><a href="" class="link-button">ДОСТАВКА</a>
-            <h3 class="section-title">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-              заработаем, поднимая его на ваш этаж.</p>
-            <img src="images/delivery.svg" width="146" height="164">
-
+            <h3 class="visually-hidden">Доставка</h3>
           </li>
           <li class="delivery-item"><a href="" class="link-button">ГАРАНТИЯ</a>
             <h3 class="visually-hidden">Гарантия</h3>
           </li>
           <li class="delivery-item"><a href="" class="link-button">КРЕДИТ</a>
             <h3 class="visually-hidden">Кредит</h3>
+          </li>
+        </ul>
+        <ul class="delivery-list-more-info">
+          <li class="delivery-item">
+            <div class="delivery-item-wrapper"><h3 class="section-title">Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p></div>
+            <img src="images/delivery.svg" width="146" height="164">
           </li>
         </ul>
       </div>
@@ -173,7 +177,7 @@
       <div class="page-container">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <strong class="section-title">Подпишитесь на рассылку</strong>
-        <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
+        <p class="subscribe-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
           спецпредложения и вот это вот всё.</p>
         <form action="https://echo.htmlacademy.ru/courses" class="subscribe-form" method="post">
           <input class="subscribe-field" type="text" name="email-value" id="subscribe-field" placeholder="Ваш e-mail">

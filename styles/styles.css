@@ -250,13 +250,31 @@ body {
   background-color: #F0F0F0;
   margin-bottom: 70px;
   padding-top: 64px;
-  padding-bottom: 146px;
+  padding-bottom: 72px;
 }
 
 .delivery-list {
   padding: 0px;
   list-style-type: none;
+  width: 280px;
+  margin: 0;
 }
+
+.delivery-list-more-info {
+  padding: 0px;
+  list-style-type: none;
+  width: 694px;
+  margin: 0;
+}
+.delivery-list-more-info .delivery-item {
+  display: flex;
+}
+
+.delivery-item-wrapper {
+  max-width: 452px;
+  margin-right: auto;
+}
+
 .delivery-button {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -492,6 +510,9 @@ color: black;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap: 40px 44px;
 }
 
 .products-show-more {
@@ -563,4 +584,59 @@ color: black;
   letter-spacing: 0.2em;
   color: #000000;
   text-decoration: none;
+}
+
+.delivery-info .page-container {
+  display: flex;
+}
+
+.subscribe .page-container {
+  display: grid;
+  grid-template-columns: 348px 252px 560px;
+}
+
+.subscribe-description {
+  margin: 0;
+  grid-column: 3 / -1;
+  text-align: left;
+}
+
+.subscribe-form {
+  grid-column: 1 / -1;
+  width: 100%;
+  display: flex;
+  margin-top: 144px;
+}
+
+.subscribe-field {
+  width: 558px;
+  box-sizing: border-box;
+}
+
+.subscribe-label {
+  margin-left: auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-link {
+  height: 380px;
+  margin-bottom: 32px
+}
+
+.product-cards-wrapper {
+  display: flex;
+}
+
+.product-card-price {
+  margin-left: auto;
+}
+
+.product-card-title {
+  margin: 0;
+  width: min-content;
+  min-width: 226px;
 }
