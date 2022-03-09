@@ -448,7 +448,17 @@ body {
   margin-bottom: 64px;
 }
 
+.footer-t-number:hover, .footer-t-number:active, .page-footer-link:hover, .page-footer-link:active {
+  color: #FFC700;
+}
 
+.footer-t-number:active, .page-footer-link:active {
+  opacity: 0.3;
+}
+
+.footer-t-number:focus, .page-footer-link:focus {
+  outline: 2px solid #AF4FFF;
+}
 
 .page-footer-adress {
   width: 239px;
@@ -795,4 +805,54 @@ color: black;
   left: 0;
   margin: auto;
   z-index: -1;
+}
+
+.social-network-item {
+  background: rgba(255, 255, 255, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.social-network-item svg {
+position: absolute;
+top: 50%;
+right: 50%;
+transform: translate(50%, -50%);
+}
+
+.social-network-item a {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.social-network-item:hover, .social-network-item:active {
+  background: #FFC700;
+}
+
+.social-network-item a:active {
+  opacity: 0.3;
+}
+
+.social-network-item a:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.html-academy-logo {
+  fill: #FFC700;
+}
+
+.html-academy-logo:hover, .html-academy-logo:active {
+  fill: #FFFFFF;
+}
+
+.html-academy-logo:active {
+  opacity: 0.3;
+}
+
+.html-academy-logo:focus {
+  border: 1px solid #AF4FFF;
+  box-sizing: border-box;
 }
