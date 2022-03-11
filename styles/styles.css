@@ -446,6 +446,8 @@ body {
   line-height: 20px;
   margin-top: 0;
   margin-bottom: 64px;
+  display: block;
+  color: white;
 }
 
 .footer-t-number:hover, .footer-t-number:active, .page-footer-link:hover, .page-footer-link:active {
@@ -679,6 +681,21 @@ color: black;
   min-height: 30px;
 }
 
+.sorting-button svg {
+  opacity: 0.3;
+}
+
+.sorting-button:hover svg{
+  opacity: 0.5;
+}
+
+.sorting-button:active svg{
+  opacity: 1;
+}
+
+.sorting-button:focus {
+  outline: 2px solid #AF4FFF;
+}
 .pagination {
   margin-top: 44px;
   margin-bottom: 8px;
@@ -755,7 +772,8 @@ color: black;
 
 .product-card-link {
   height: 380px;
-  margin-bottom: 32px
+  margin-bottom: 32px;
+  position: relative;
 }
 
 .product-cards-wrapper {
@@ -856,3 +874,80 @@ transform: translate(50%, -50%);
   border: 1px solid #AF4FFF;
   box-sizing: border-box;
 }
+
+.product-card-button {
+ height: 100%;
+ width: 100%;
+ position: absolute;
+}
+
+.product-card-button span {
+  font-family: 'Raleway';
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 21px;
+ text-align: center;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ color: black;
+  display: block;
+  margin-top: 50%;
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.product-card-button span::after {
+  background-color: #FFE17F;
+  height: 8px;
+  width: 220px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.product-card:hover span{
+  display: block;
+}
+
+.product-card:hover .product-card-image, .product-card:hover .product-cards-wrapper{
+  opacity: 0.6;
+}
+
+.product-card:active span::after{
+  background: #FFC700;
+}
+.product-card-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.pagination-prev:hover, .pagination-next:hover {
+  background-color: #DCDCDC;
+}
+.pagination-prev:active, .pagination-next:active {
+  opacity: 0.3;
+}
+
+.pagination-prev:focus, .pagination-next:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.pagination-link:hover {
+  opacity: 1;
+}
+
+.pagination-link:active {
+  opacity: 0.1;
+}
+
+.pagination-link:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.pagination-current {opacity: 0.6;}
+
